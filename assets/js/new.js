@@ -55,7 +55,7 @@ console.log(transactionsList)
 
 
 let modalBtn = document.getElementById("createTrans")
-let modal = document.querySelector(".Modal")
+let modal = document.querySelector(".modalInputs")
 let closeBtn = document.querySelector(".close-btn")
 let subBtn = document.getElementById("save-btn")
 const tableBody = document.querySelector('tbody');
@@ -120,10 +120,10 @@ subBtn.onclick = function () {
 
 
 const login = sessionStorage.getItem('isLoggedIn');
-if (login) {
+/*if (login) {
   const name = sessionStorage.getItem('name');
   name.innerHTML = name;
-}
+}*/
 
 const dash = document.getElementById('dash');
 dash.addEventListener('click', () => {
@@ -168,6 +168,6 @@ trans.addEventListener('click', () => {
 
 const logout = document.getElementById('logout');
 logout.addEventListener('click', () => {
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
   sessionStorage.removeItem('isLoggedIn');
 });
