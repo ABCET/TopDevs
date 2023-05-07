@@ -84,7 +84,7 @@ submitButton.addEventListener("click", function() {
       const user = userCredential.user;
       console.log("Success! Welcome back!");
       window.alert("Success! Welcome back!");
-      window.location.href = "../pages/transaction.html";
+      window.location.href = "../pages/new.html";
       // ...
     })
     .catch((error) => {

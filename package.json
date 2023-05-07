@@ -1,7 +1,7 @@
 {
-  "name": "shn-electronjs",
+  "name": "financeapp",
   "version": "1.0.0",
-  "description": "finance app",
+  "description": "an app to manage personal finance",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MVK2803/SHN-ElectronJS.git"
+    "url": "git+https://github.com/ABCET/TopDevs"
   },
-  "author": "mathew",
+  "author": "Abhishek",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MVK2803/SHN-ElectronJS/issues"
+    "url": "https://github.com/ABCET/TopDevs/issues"
   },
-  "homepage": "https://github.com/MVK2803/SHN-ElectronJS#readme",
+  "homepage": "https://github.com/ABCET/TopDevs#readme",
   "devDependencies": {
     "electron": "^24.2.0",
     "firebase": "^9.21.0",

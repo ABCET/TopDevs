@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizlet</title>
+    <link rel="stylesheet" href="../assets/css/new.css">
+    <script src="https://kit.fontawesome.com/9d4aef4753.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.jpg" alt="Logo">
+                </a>
+            </div>
+            <div class="upper">
+                <p id="dash"><i class="fa-solid fa-bars fa-lg"></i><a href="#">Dashboard</a></p>
+                <p id="trans"><i class="fas fa-money-check"></i><a href="#">Transaction</a></p>
+                <p><i class="fa-solid fa-wallet"></i><a href="#" id="wallet">My Wallet</a></p>
+                <p><i class="fa-regular fa-credit-card"></i><a href="#">Cards</a></p>
+            </div>
+            <div class="middle">
+                <p><i class="fa-solid fa-gear"></i><a href="#">Setting</a></p>
+                <p><i class="fa-solid fa-user"></i><a href="#">Account</a></p>
+            </div>
+            <div class="lower">
+                <p><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#" id="logout">Logout</a>
+                </p>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="intro-text">
+                <h2 id="head"></h2>
+                <input placeholder="Search" type="search" class="input" id="search">
+                <div class="userinfo">
+                    <div class="username">
+                        <h3 id="name"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="left">
+                    <div class="wallet">
+                        <h4>My Wallet</h4>
+                        <div class="row">
+                            <div class="income">
+                                <h5>Income</h5>
+                                <p>₹ 0.00</p>
+                            </div>
+                            <div class="expense">
+                                <h5>Expense</h5>
+                                <p>₹ 0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity">
+                    <h4>Activity</h4>
+                    <canvas id="activity"></canvas>
+                </div>
+            </div>
+            <div class="Modal">
+                <div class="modalInputs">
+                    <button class="close-btn">X</button>
+                    <h3>Create Transactions</h3>
+                    <label>Amount</label>
+                    <input id="amount"></input>
+                    <label>Date</label>
+                    <input id="date" type="date"></input>
+                    <label>Brand</label>
+                    <input id="brand"></input>
+                    <label>Note(Optional)</label>
+                    <input id="Note"></input>
+                    <button id="save-btn">Save</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <button id="createTrans">Create Transaction</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>AMOUNT</th>
+                            <th>BRAND</th>
+                            <th>CATEGORY</th>
+                            <th>DATE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/new.js"></script>
+</body>
+
+</html>
