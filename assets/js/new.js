@@ -3,7 +3,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebas
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyDPQSndgLgYuXZaYEkYBJcsQpJPunK2J5o",
   authDomain: "finance-app-42e1b.firebaseapp.com",
@@ -13,6 +12,7 @@ const firebaseConfig = {
   appId: "1:1844469888:web:c96dc5a104c6e479710665",
   measurementId: "G-2Z0V509LBZ"
 };
+
 const testUser = "MVK"
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
@@ -50,17 +50,11 @@ onValue(transactionsQuery, (snapshot) => {
   });
 });
 
-console.log(transactionsList)
-
-
-
 let modalBtn = document.getElementById("createTrans")
 let modal = document.querySelector(".modalInputs")
 let closeBtn = document.querySelector(".close-btn")
 let subBtn = document.getElementById("save-btn")
 const tableBody = document.querySelector('tbody');
-
-
 
 modalBtn.onclick = function () {
   modal.style.display = "flex";
@@ -117,7 +111,6 @@ subBtn.onclick = function () {
   });
 
 };
-
 
 const login = sessionStorage.getItem('isLoggedIn');
 /*if (login) {

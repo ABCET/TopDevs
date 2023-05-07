@@ -74,16 +74,13 @@ createacctbtn.addEventListener("click", function() {
 
 submitButton.addEventListener("click", function() {
   email = emailInput.value;
-  console.log(email);
   password = passwordInput.value;
-  console.log(password);
 
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
       sessionStorage.setItem('isLoggedIn', true);
-      console.log("Success! Welcome back!");
       window.alert("Success! Welcome back!");
       window.location.href = "../pages/new.html";
       // ...
@@ -91,7 +88,6 @@ submitButton.addEventListener("click", function() {
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log("Error occurred. Try again.");
       window.alert("Error occurred. Try again.");
     });
 });
