@@ -1,0 +1,25 @@
+{
+  "name": "financeapp",
+  "version": "1.0.0",
+  "description": "an app to manage personal finance",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "start"
+  },
+  "dependencies": {
+    "firebase": "^9.21.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Abhi",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^24.2.0"
+  }
+}
