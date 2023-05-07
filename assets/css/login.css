@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #caede8;
+}
+
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  
+  color: #0583D2;
+  letter-spacing: 0.1em;
+}
+
+p {
+  margin-top: 8%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+}
+
+p span {
+  background:#f7f7f7;
+  padding:0 10px;
+}
+
+input {
+  margin-bottom: 3%;
+}
+
+input:last-of-type {
+  margin-bottom: 0;
+}
+
+input, button {
+  padding: 3%;
+  width: 100%;
+}
+
+.login-container {
+  background-color: rgb(255, 255, 255);
+  padding: 7%;
+  box-shadow: 0 4px 8px 0 rgba(145, 129, 129, 0.2);
+  /* horizontal align */
+  width: 40vw;
+  margin-left: 30vw;
+  /* vertical align */
+  height: fit;
+  margin-top: 15vh;
+  border-radius: 10px;
+}
+
+#submit, #create-acct-btn {
+  background-color: #0583D2;
+  color: white;
+  border-radius: 5px;
+ 
+  border: none;
+  margin-top: 5%;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#sign-up {
+  border: none;
+}
+
+#create-acct {
+  display: none;
+}
+
+#return-btn {
+  background: none;
+  color: grey;
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
+}
