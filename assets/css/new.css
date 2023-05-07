@@ -172,6 +172,7 @@ button {
     background-color: #ffffff;
     float: right;
     border-radius: 5px;
+    overflow: scroll;
 }
 
 table {
