@@ -21,7 +21,6 @@ const transactionsQuery = query(transactionsRef, orderByChild('username'), equal
 const transactionsList = [];
 
 onValue(transactionsQuery, (snapshot) => {
-  const transactionsList = [];
   snapshot.forEach((childSnapshot) => {
     const transaction = childSnapshot.val();
     transactionsList.push({
@@ -112,12 +111,6 @@ subBtn.onclick = function () {
 
 };
 
-const login = sessionStorage.getItem('isLoggedIn');
-/*if (login) {
-  const name = sessionStorage.getItem('name');
-  name.innerHTML = name;
-}*/
-
 const dash = document.getElementById('dash');
 dash.addEventListener('click', () => {
   const head = document.getElementById('head');
@@ -133,21 +126,34 @@ dash.addEventListener('click', () => {
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December'],
       datasets: [{
-        data: [0, 10, 5, 2, 20, 30, 45, 44, 32, 67, 89, 90],
+        label: 'Expenditure',
+        data: [40000, 38000, 35000, 35000, 32000, 30000, 25000, 25000, 22000, 20000, 15000, 10000],
         borderColor: 'rgb(255, 99, 132)',
         tension: 0.5
+      }, {
+        label: 'Savings',
+        data: [10000, 12000, 15000, 15000, 18000, 20000, 25000, 25000, 28000, 30000, 35000, 40000],
+        borderColor: 'rgb(54, 162, 235)',
+        tension: 0.5
+      },
+      {
+        label: 'Income',
+        data: Array.from({ length: 12 }, () => 50000),
+        borderColor: 'rgb(75, 192, 192)',
+        tension: 0
       }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
     }
   });
   activity.update();
 });
+
+const login = sessionStorage.getItem('isLoggedIn');
+if (login) {
+  dash.click();
+  console.log('logged in');
+  // const name = sessionStorage.getItem('name');
+  // name.innerHTML = name;
+}
 
 const trans = document.getElementById('trans');
 trans.addEventListener('click', () => {
@@ -161,6 +167,6 @@ trans.addEventListener('click', () => {
 
 const logout = document.getElementById('logout');
 logout.addEventListener('click', () => {
-  window.location.href = 'index.html';
+  window.location.href = 'login.html';
   sessionStorage.removeItem('isLoggedIn');
 });
