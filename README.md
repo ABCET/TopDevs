@@ -16,7 +16,7 @@ Front-end consists of HTML,CSS and Javascript and backend using firebase.Initial
 ## How to configure
 1.Clone the repository
 ``````
-git clone https://github.com/ABCET/TopDevs
+https://github.com/ABCET/Wizlet
 ``````
 2.Make sure you have the latest versions of Node.js, npm installed on your machine.
 
