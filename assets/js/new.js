@@ -63,10 +63,10 @@ const tableBody = document.querySelector('tbody');
 
 
 modalBtn.onclick = function () {
-  modal.style.display = "block"
+  modal.style.display = "flex";
 }
 closeBtn.onclick = function () {
-  modal.style.display = "none"
+  modal.style.display = "none";
 }
 
 subBtn.onclick = function () {
@@ -102,7 +102,7 @@ subBtn.onclick = function () {
   tableBody.appendChild(newRow);
 
   // hide modal
-  const modal = document.querySelector('.Modal');
+  const modal = document.querySelector('.modalInputs');
   modal.style.display = 'none';
 
   // create new transaction reference and add data to database
