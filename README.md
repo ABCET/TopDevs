@@ -2,15 +2,15 @@
 
 
 # Wizlet
-Wizlet is a personal finance management app.Users can create an account to store their income and expenditure to get financial analytics.They can also set goals regarding thir expenditure.They can store their card and wallet details..Also goal can be set to limit their expense and increase the savings
+Wizlet is a personal finance management app. Users can create an account to store their income and expenditure to get financial analytics. They can also set goals regarding thir expenditure. They can store their card and wallet details. Also goal can be set to limit their expense and increase the savings
 ## Team members
 1. Abhishek S [https://github.com/ABCET]
 2. Mathew V Kariath [https://github.com/MVK2803]
 3. Rajath Thomas Kurian [https://github.com/rajath-tk]
 ## Link to product walkthrough
-[link to video]
+https://drive.google.com/file/d/1vk1JTzNndjVetfqwvIMBTTqWxG6Q-y_h/view?usp=share_link
 ## How it Works ?
-Front-end consists of HTML,CSS and Javascript and backend using firebase.Initially user signup to create an account and then login to their account.Users can add their cards, wallets ,total income and transaction and get graphical analysis.
+Front-end consists of HTML,CSS and Javascript and backend using firebase. Initially user signup to create an account and then login to their account. Users can add their cards, wallets ,total income and transaction and get graphical analysis.
 ## Libraries used
 1.Chart.js -- 24.2.0
 ## How to configure
