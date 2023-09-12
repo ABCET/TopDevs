@@ -4,7 +4,7 @@
 # Wizlet
 Wizlet is a personal finance management app. Users can create an account to store their income and expenditure to get financial analytics. They can also set goals regarding thir expenditure. They can store their card and wallet details. Also goal can be set to limit their expense and increase the savings
 ## Team members
-1. Abhishek S [https://github.com/ABCET]
+1. Abhishek S [https://github.com/abhi-s-03]
 2. Mathew V Kariath [https://github.com/MVK2803]
 3. Rajath Thomas Kurian [https://github.com/rajath-tk]
 ## Link to product walkthrough
